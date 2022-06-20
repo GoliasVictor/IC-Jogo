@@ -1,0 +1,86 @@
+
+body{
+	font-family: Whitney, "Helvetica Neue", Helvetica, Arial;
+	background-color:#36393f;
+	font-size: 1.2rem;
+	
+	
+  }
+  #passages{
+	  max-width: 45em;
+  }
+  a{
+	color:#1faff4;
+  }
+
+
+c-chat{
+	margin: 0;
+	border-radius: 1em;
+	padding: 1em 0 ;
+	padding-top: 0em;
+	background-color: #36393f;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #DDD;
+	font-family: Whitney,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+c-chat > *{
+	padding: 0 1em;
+}
+.nome-usuario{
+	color: white;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+}
+.mensagem {
+	display: grid;
+	grid-template-columns: 72px auto;	
+	line-height: 1.375em;
+} 
+
+.perfil {
+	justify-self: center;
+	align-self: center;
+	margin: 0  10px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	
+}
+c-mensagem[usuario]{
+	display: block;
+	margin-top: 1em;
+} 
+c-decisao{
+	display: flex;
+	margin-top: 1em;
+	flex-direction: column;
+}
+c-decisao[linha]{
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;	
+}
+c-escolha,
+.link-internal{
+	border-radius: 0.5em;
+	padding: 0.5em;
+	margin: 0.5em;
+	display: block;
+	/* background-color: #5865f2; */
+	background-color: #2F3136;
+	cursor: pointer;
+}
+
+c-escolha:hover,
+.link-internal:hover{
+	background-color: #4752c4;
+}
+[caminho][mostrando]{
+	display: block;
+}
+[caminho]{
+	display: none;
+}
