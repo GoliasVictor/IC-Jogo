@@ -1,0 +1,43 @@
+@import url("./chat.css");
+body {
+	font-family: Whitney, "Helvetica Neue", Helvetica, Arial;
+	background-color: #36393f;
+	font-size: 1.2rem;
+
+}
+
+#passages {
+	max-width: 45em;
+}
+
+a {
+	color: #1faff4
+}
+
+.link-internal {
+	margin: 0.5em 0;
+	text-align: center;
+}
+
+
+
+[linha] .link-internal {
+	margin: 0.5em;
+}
+[linha] .link-internal:first-child {
+	margin-left: 0;
+}
+
+[linha] .link-internal:last-child {
+	margin-right: 0;
+}
+
+
+ 
+c-decisao > br {
+	display: none;
+}
+
+.caminhos{
+	display: none;
+}

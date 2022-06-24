@@ -1,0 +1,88 @@
+
+
+c-chat {
+	overflow: auto;
+    height: 80vh;
+	margin: 0;
+	border-radius: 1em;
+	padding: 1em 0;
+	padding-top: 0em;
+	background-color: #36393f;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #DDD;
+	font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	box-shadow: 0 0 20px 10px #2F3136;
+}
+
+c-chat>* {
+	padding: 0 1em;
+}
+
+c-mensagem::part(nome-usuario) {
+	color: white;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+}
+
+c-mensagem::part(mensagem) {
+	display: grid;
+	grid-template-columns: 72px auto;
+	line-height: 1.375em;
+}
+
+c-mensagem::part(perfil){
+	justify-self: center;
+	align-self: start;
+	margin: 0 10px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+    object-fit: cover;
+}
+
+c-mensagem[uid] {
+	display: block;
+	margin-top: 1em;
+}
+
+c-decisao {
+	display: grid;
+	margin-top: 1em;
+	grid-auto-flow: column;
+	gap: 0.5em;
+	grid-auto-columns: 1fr;
+}
+
+c-decisao[linha] {
+	grid-auto-flow: row;
+}
+
+c-escolha,
+.link-internal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.5em;
+	padding: 0.5em;
+
+	text-align: center;
+	
+	/* background-color: #5865f2; */
+	background-color: #2F3136;
+	color: white;
+	cursor: pointer;
+}
+ 
+
+
+
+c-escolha:hover,
+.link-internal:hover {
+	color: white;
+	background-color: #4752c4;
+}
+[caminho]{
+	display: false;
+}
